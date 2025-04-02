@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <title>Responsive Portfolio website</title>
+    <link rel="stylesheet" href="portfolioweb.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[#333] ">
+    <!-- start navbar -->
+    <nav class="navber w-[100%] h-[100px] bg-linear-to-r from-[#3a1c71] to-[#d76d77]">
+        <div class="container p-[20px] max-w-[1200px] m-[0px auto]">
+
+        <div class="nav-content flex justify-between items-center h-[100%] m-[auto 0px]">
+            <a href="#" class="logo decoration-[none] text-[#fff] text-[1.8rem] text-center p-[20px] "><span class="logo-icon text-[2rem] text-center p-[20px] ">❖</span>Horizon</a>
+
+            <ul class="nav-manu flex  p-[20px 0px] mr-[-150px] gap-[50px] list-none">
+                <li><a class="nav-links decoration-[none] text-white text-[1.5rem] relative " href="#">Home</a></li>
+                <li><a class="nav-links decoration-[none] text-white text-[1.5rem] relative " href="#">About</a></li>
+                <li><a class="nav-links decoration-[none] text-white text-[1.5rem] relative " href="#">Services</a></li>
+                <li><a class="nav-links decoration-[none] text-white text-[1.5rem] relative " href="#">Portfolio</a></li>
+                <li><a class="nav-links decoration-[none] text-white text-[1.5rem] relative " href="#">Contact</a></li>
+            </ul>
+
+            <div class="menu-icon hidden "><i class="fa-solid fa-bars " style="color:black; font-size: 40px;"></i></div>
+        </div>
+
+        </div>
+    </nav>
+    <script>
+        document.querySelector('.menu-icon').addEventListener('click', () => {
+            document.querySelector('.nav-manu').classList.toggle('show');
+        });
+      </script>
+
+    <!-- end navbar -->
+
+     <!-- start hero content -->
+    <section class="hero">
+    <div class="hero-content">
+        <h1>Welcome to Horizon</h1>
+        <p>we create beutiful. Funcational websites that help your business grow and thrive in the digital landscape.</p>
+        <a href="#" class="getStartButton">Get started</a>
+    </div>
+    </section>
+     <!-- end hero content -->
+
+     <!-- start card section -->
+      <section class="card-section">
+    
+        <div class="container">
+            <h2 class="section-name">Our Services</h2>
+
+               <!-- card box -->
+            
+            <div class="card-box">
+                <!-- card 1 start -->
+                <div class="card">
+                    <img src="./image/img-2.jpg" class="card-img" alt="">
+
+                    <div class="card-content">
+                        <h2 class="card-title">Web Design</h2>
+                        <p class="card-text">Web Design
+                            We craft beautifull, Responsive websites tailored to your brand's uniwue identity abd your user's needs.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-name">Design</span>
+                        <a href="#" class="card-learn-link">Learn More &#8594;</a>
+                    </div>
+
+                </div>
+                <!-- card 1 end -->
+                 <!-- card 2 start -->
+                <div class="card">
+                    <img src="./image/img-3.jpg" class="card-img" alt="">
+
+                    <div class="card-content">
+                        <h2 class="card-title">App Development</h2>
+                        <p class="card-text">Web Design
+                            We craft beautifull, Responsive websites tailored to your brand's uniwue identity abd your user's needs.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-name">Development</span>
+                        <a href="#" class="card-learn-link">Learn More &#8594;</a>
+                    </div>
+
+                </div>
+                 <!-- card 2 end -->
+                 <!-- card 3 start -->
+                <div class="card">
+                    <img src="./image/img-4.jpg" class="card-img" alt="">
+
+                    <div class="card-content">
+                        <h2 class="card-title">Brand Strategy</h2>
+                        <p class="card-text">Web Design
+                            We craft beautifull, Responsive websites tailored to your brand's uniwue identity abd your user's needs.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-name">Marketing</span>
+                        <a href="#" class="card-learn-link">Learn More &#8594;</a>
+                    </div>
+
+                </div>
+                <!-- card 3 end -->
+                
+            </div>
+            <!-- card box end -->
+            
+        </div>
+
+      </section>
+      <!-- end card section -->
+
+       <!-- start footer section -->
+        
+       <footer class="footer">
+              <div class="container">
+                <div class="footer-content">
+
+                    <!-- About us coloumn start -->
+
+                    <div class="footer-coloumn">
+                        <h2>About Us</h2>
+                        <p>Horizon is a creative digital agency foused on dslivering expectional web experinces that help business grow and succed in the digital world.</p>
+                       <div class="social-links">
+                        <a href="#" class="social-link-icon">Y</a>
+                        <a href="#" class="social-link-icon">fb</a>
+                        <a href="#" class="social-link-icon">t</a>
+                        <a href="#" class="social-link-icon">in</a>
+                        <a href="#" class="social-link-icon">g</a>
+                       </div>
+                    </div>
+                    <!-- About us coloumn end -->
+
+                     <!-- quick link coloumn start -->
+                     <div class="footer-coloumn">
+                        <h2> Quick Link</h2>
+
+                        <ul class="footer-links">
+                            <li><a href="#" class="links">Home</a></li>
+                            <li><a href="#" class="links">About</a></li>
+                            <li><a href="#" class="links">Services</a></li>
+                            <li><a href="#" class="links">Portfolio</a></li>
+                            <li><a href="#" class="links">Contect</a></li>
+                        </ul>
+
+                    </div>
+                    <!-- quick link coloumn end -->
+
+                    <!-- Services coloumn start -->
+                    <div class="footer-coloumn">
+                        <h2>Services</h2>
+                        <ul class="footer-links">
+                            <li><a href="#" class="service-links">Web Design</a></li>
+                            <li><a href="#" class="service-links">Mobile Apps</a></li>
+                            <li><a href="#" class="service-links">E-Commerce</a></li>
+                            <li><a href="#" class="service-links">SEO Optimization</a></li>
+                            <li><a href="#" class="service-links">UI/UX Design</a></li>
+                        </ul>
+                    </div>
+                    <!-- Services coloumn end -->
+
+                    <!-- About Us coloumn start -->
+                    <div class="footer-coloumn">
+                        <h2>Contect Us</h2>
+
+                        <div class="contect-info">
+
+                            <!-- first item -->
+
+                            <div class="contect-item">
+                              <span class="contect-icon">&#xf279;</span>
+                              <span>D. EarPur, south 24 PGS, pin- 743503
+                              </span>
+                            </div>  
+
+                             <!-- seacond item -->
+
+                             <div class="contect-item">
+                                <span class="contect-icon">&#9990;</span>
+                                <span>+6291230286</span>
+                              </div>  
+
+                               <!-- third item -->
+
+                            <div class="contect-item">
+                                <span class="contect-icon">&#9993;</span>
+                                <span>dipbag009@gmail.com</span>
+                              </div>  
+
+                        </div>
+                        <h3>Send Feedback</h3>
+                        <form action="" class="form">
+                            <input class="email-input" type="text" placeholder="Enter Your Email">
+                            <button class="submit-button" type="submit">Send</button>
+                        </form>
+                        
+                    </div>
+                    <!-- About Us coloumn end -->
+
+                
+                </div>
+                <div class="footer-bottom">
+                    <p>@ 2025 HoriZon. All Rights Reserved.</p>
+                </div>
+              </div>
+       </footer>
+       <!-- end footer section -->
+</body>
+</html>
