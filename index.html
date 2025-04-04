@@ -1,214 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <title>Responsive Portfolio website</title>
-    <link rel="stylesheet" href="portfolioweb.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-[#333] ">
+
+<body class="text-gray-800">
     <!-- start navbar -->
-    <nav class="navber w-[100%] h-[100px] bg-linear-to-r from-[#3a1c71] to-[#d76d77]">
-        <div class="container p-[20px] max-w-[1200px] m-[0px auto]">
+    <nav class="w-full h-24 bg-gradient-to-r from-[#3a1c71] to-[#d76d77]">
+        <div class="max-w-screen-xl mx-auto p-5 flex justify-between items-center">
 
-        <div class="nav-content flex justify-between items-center h-[100%] m-[auto 0px]">
-            <a href="#" class="logo decoration-[none] text-[#fff] text-[1.8rem] text-center p-[20px] "><span class="logo-icon text-[2rem] text-center p-[20px] ">❖</span>Horizon</a>
+            <a href="#" class="text-white text-2xl">❖ Horizon</a>
 
-            <ul class="nav-manu flex  p-[20px 0px] mr-[-150px] gap-[50px] list-none">
-                <li><a class="nav-links decoration-[none] text-white text-[1.5rem] relative " href="#">Home</a></li>
-                <li><a class="nav-links decoration-[none] text-white text-[1.5rem] relative " href="#">About</a></li>
-                <li><a class="nav-links decoration-[none] text-white text-[1.5rem] relative " href="#">Services</a></li>
-                <li><a class="nav-links decoration-[none] text-white text-[1.5rem] relative " href="#">Portfolio</a></li>
-                <li><a class="nav-links decoration-[none] text-white text-[1.5rem] relative " href="#">Contact</a></li>
+            <ul class="flex gap-12">
+                <li><a href="#" class="text-white text-xl hover:text-gray-800 hover:text-shadow-lg">Home</a></li>
+                <li><a href="#" class="text-white text-xl hover:text-gray-800 hover:text-shadow-lg">About</a></li>
+                <li><a href="#" class="text-white text-xl hover:text-gray-800 hover:text-shadow-lg">Services</a></li>
+                <li><a href="#" class="text-white text-xl hover:text-gray-800 hover:text-shadow-lg">Portfolio</a></li>
+                <li><a href="#" class="text-white text-xl hover:text-gray-800 hover:text-shadow-lg">Contact</a></li>
             </ul>
 
-            <div class="menu-icon hidden "><i class="fa-solid fa-bars " style="color:black; font-size: 40px;"></i></div>
-        </div>
-
+            <div class="text-black text-4xl cursor-pointer block lg:hidden">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
     </nav>
-    <script>
-        document.querySelector('.menu-icon').addEventListener('click', () => {
-            document.querySelector('.nav-manu').classList.toggle('show');
-        });
-      </script>
 
-    <!-- end navbar -->
-
-     <!-- start hero content -->
-    <section class="hero h-[60vh] bg-linear-to-r from-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,0.5)] bg-cover bg-center bg-no-repeat flex justify-center items-center text-white" >
-    <div class="hero-content max-w-[800px] p-[0px 20px] text-center">
-        <h1 class="text-[3rem] mb-[20px] ">Welcome to Horizon</h1>
-        <p class="text-[1.2rem] mb-[50px] ">we create beutiful. Funcational websites that help your business grow and thrive in the digital landscape.</p>
-        <a href="#" class="getStartButton inline-block text-[1.2rem] bg-[#ffaf7d] rounded-[50px] uppercase border-none tracking-tight p-[15px 30px]" >Get started</a>
-    </div>
-    </section>
-     <!-- end hero content -->
-
-     <!-- start card section -->
-      <section class="card-section p-[50px 0px]">   
-    
-        <div class="container">
-            <h2 class="section-name text-center text-[2.5rem] text-white mb-[50px]">Our Services</h2>
-
-               <!-- card box -->
-            
-            <div class="card-box">
-                <!-- card 1 start -->
-                <div class="card">
-                    <img src="./image/img-2.jpg" class="card-img" alt="">
-
-                    <div class="card-content">
-                        <h2 class="card-title">Web Design</h2>
-                        <p class="card-text">Web Design
-                            We craft beautifull, Responsive websites tailored to your brand's uniwue identity abd your user's needs.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-name">Design</span>
-                        <a href="#" class="card-learn-link">Learn More &#8594;</a>
-                    </div>
-
-                </div>
-                <!-- card 1 end -->
-                 <!-- card 2 start -->
-                <div class="card">
-                    <img src="./image/img-3.jpg" class="card-img" alt="">
-
-                    <div class="card-content">
-                        <h2 class="card-title">App Development</h2>
-                        <p class="card-text">Web Design
-                            We craft beautifull, Responsive websites tailored to your brand's uniwue identity abd your user's needs.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-name">Development</span>
-                        <a href="#" class="card-learn-link">Learn More &#8594;</a>
-                    </div>
-
-                </div>
-                 <!-- card 2 end -->
-                 <!-- card 3 start -->
-                <div class="card">
-                    <img src="./image/img-4.jpg" class="card-img" alt="">
-
-                    <div class="card-content">
-                        <h2 class="card-title">Brand Strategy</h2>
-                        <p class="card-text">Web Design
-                            We craft beautifull, Responsive websites tailored to your brand's uniwue identity abd your user's needs.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-name">Marketing</span>
-                        <a href="#" class="card-learn-link">Learn More &#8594;</a>
-                    </div>
-
-                </div>
-                <!-- card 3 end -->
-                
-            </div>
-            <!-- card box end -->
-            
+    <section class="relative h-[60vh] bg-cover bg-center" style="background-image: url('./image/img-1.jpg');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative z-10 text-center text-white py-16 px-6 max-w-2xl mx-auto">
+            <h1 class="text-4xl font-bold mb-4 text-shadow-md">Welcome to Horizon</h1>
+            <p class="text-lg mb-8">We create beautiful, functional websites that help your business grow and thrive in the digital landscape.</p>
+            <a href="#" class="bg-[#ffaf7d] text-gray-800 py-3 px-8 rounded-full text-lg transition-all duration-300 hover:translate-y-1 hover:scale-110">Get started</a>
         </div>
+    </section>
 
-      </section>
-      <!-- end card section -->
-
-       <!-- start footer section -->
-        
-       <footer class="footer">
-              <div class="container">
-                <div class="footer-content">
-
-                    <!-- About us coloumn start -->
-
-                    <div class="footer-coloumn">
-                        <h2>About Us</h2>
-                        <p>Horizon is a creative digital agency foused on dslivering expectional web experinces that help business grow and succed in the digital world.</p>
-                       <div class="social-links">
-                        <a href="#" class="social-link-icon">Y</a>
-                        <a href="#" class="social-link-icon">fb</a>
-                        <a href="#" class="social-link-icon">t</a>
-                        <a href="#" class="social-link-icon">in</a>
-                        <a href="#" class="social-link-icon">g</a>
-                       </div>
-                    </div>
-                    <!-- About us coloumn end -->
-
-                     <!-- quick link coloumn start -->
-                     <div class="footer-coloumn">
-                        <h2> Quick Link</h2>
-
-                        <ul class="footer-links">
-                            <li><a href="#" class="links">Home</a></li>
-                            <li><a href="#" class="links">About</a></li>
-                            <li><a href="#" class="links">Services</a></li>
-                            <li><a href="#" class="links">Portfolio</a></li>
-                            <li><a href="#" class="links">Contect</a></li>
-                        </ul>
-
-                    </div>
-                    <!-- quick link coloumn end -->
-
-                    <!-- Services coloumn start -->
-                    <div class="footer-coloumn">
-                        <h2>Services</h2>
-                        <ul class="footer-links">
-                            <li><a href="#" class="service-links">Web Design</a></li>
-                            <li><a href="#" class="service-links">Mobile Apps</a></li>
-                            <li><a href="#" class="service-links">E-Commerce</a></li>
-                            <li><a href="#" class="service-links">SEO Optimization</a></li>
-                            <li><a href="#" class="service-links">UI/UX Design</a></li>
-                        </ul>
-                    </div>
-                    <!-- Services coloumn end -->
-
-                    <!-- About Us coloumn start -->
-                    <div class="footer-coloumn">
-                        <h2>Contect Us</h2>
-
-                        <div class="contect-info">
-
-                            <!-- first item -->
-
-                            <div class="contect-item">
-                              <span class="contect-icon">&#xf279;</span>
-                              <span>D. EarPur, south 24 PGS, pin- 743503
-                              </span>
-                            </div>  
-
-                             <!-- seacond item -->
-
-                             <div class="contect-item">
-                                <span class="contect-icon">&#9990;</span>
-                                <span>+6291230286</span>
-                              </div>  
-
-                               <!-- third item -->
-
-                            <div class="contect-item">
-                                <span class="contect-icon">&#9993;</span>
-                                <span>dipbag009@gmail.com</span>
-                              </div>  
-
+    <!-- start card section -->
+    <section class="py-20">
+        <div class="max-w-screen-xl mx-auto text-center mb-20">
+            <h2 class="text-3xl font-bold mb-10">Our Services</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+                <!-- card 1 -->
+                <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+                    <img src="./image/img-2.jpg" class="w-full h-52 object-cover object-top" alt="">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-[#3a1c71] mb-4">Web Design</h3>
+                        <p class="text-gray-600 mb-4">We craft beautiful, responsive websites tailored to your brand's unique identity and your user's needs.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="bg-[#f8f9fa] text-[#3a1c71] px-4 py-2 rounded-full">Design</span>
+                            <a href="#" class="text-[#d76d77] font-semibold hover:text-[#3a1c71] transition-all">Learn More →</a>
                         </div>
-                        <h3>Send Feedback</h3>
-                        <form action="" class="form">
-                            <input class="email-input" type="text" placeholder="Enter Your Email">
-                            <button class="submit-button" type="submit">Send</button>
-                        </form>
-                        
                     </div>
-                    <!-- About Us coloumn end -->
+                </div>
+                <!-- card 2 -->
+                <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+                    <img src="./image/img-3.jpg" class="w-full h-52 object-cover object-top" alt="">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-[#3a1c71] mb-4">App Development</h3>
+                        <p class="text-gray-600 mb-4">We create powerful and seamless mobile applications to enhance user engagement and boost productivity.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="bg-[#f8f9fa] text-[#3a1c71] px-4 py-2 rounded-full">Development</span>
+                            <a href="#" class="text-[#d76d77] font-semibold hover:text-[#3a1c71] transition-all">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 3 -->
+                <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+                    <img src="./image/img-4.jpg" class="w-full h-52 object-cover object-top" alt="">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-[#3a1c71] mb-4">Brand Strategy</h3>
+                        <p class="text-gray-600 mb-4">We help businesses craft compelling brand strategies that drive growth and create long-lasting connections with customers.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="bg-[#f8f9fa] text-[#3a1c71] px-4 py-2 rounded-full">Marketing</span>
+                            <a href="#" class="text-[#d76d77] font-semibold hover:text-[#3a1c71] transition-all">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                
-                </div>
-                <div class="footer-bottom">
-                    <p>@ 2025 HoriZon. All Rights Reserved.</p>
-                </div>
-              </div>
-       </footer>
-       <!-- end footer section -->
+    <!-- start footer section -->
+   
+    <!-- end footer section -->
 </body>
+
 </html>
